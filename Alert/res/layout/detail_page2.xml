@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res/com.example.alert"
+    android:background="#e9e9e7">
+	<include
+	       android:id="@+id/headers"
+	       android:layout_width="wrap_content"
+	       layout="@layout/header" />
+	<com.sothree.slidinguppanel.SlidingUpPanelLayout
+		    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+		    android:id="@+id/sliding_layout"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:gravity="bottom"
+		    sothree:panelHeight="68dp"
+		    sothree:shadowHeight="4dp"
+		    android:layout_below="@id/headers"
+		    android:layout_above="@+id/footer_details">
+		<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+
+		 
+		  <ScrollView 
+       android:id="@+id/scrollview_detail"
+       android:layout_width="fill_parent" 
+       android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       
+        
+        android:layout_margin="5dp">
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/mapshow"
+            android:background="#a7a50e">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/map" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mapshow"
+            android:background="#ffffff" >
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"><RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#97ce68" >
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="100dp"
+                            android:layout_marginTop="3dp"
+                            android:text="Phương"
+                            android:textColor="#ffffff"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignLeft="@+id/textView1"
+                            android:layout_below="@+id/textView1"
+                            android:paddingBottom="3dp"
+                            android:text="public: 14:03 - 05/05/2014"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/Title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp"
+                        android:text="Hot girl An japan rang rỡ thi tốt nghiệp"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="#6bcbca"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:text="Near HCM City" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="An Japan cung la mot si tu trong ky thi tot nghiep THPT 2014" />
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/pager"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="0.89"
+                         >
+                    </android.support.v4.view.ViewPager>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="Co duoc thi tot nghiep tai “san nha” THPT Le Quy Don. Trong buoi thi mon Hoa chieu nay (3/6), An den truong luc gan sat gio lam bai. Du vay, co van rat tuoi tan." />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="#ff6766"
+                        android:padding="5dp" >
+
+                        <LinearLayout
+                            android:id="@+id/likelayout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#fdfdfd"
+                            android:orientation="horizontal"
+                            android:padding="3dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/like" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout02"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignTop="@+id/linearLayout2"
+                            android:background="#fdfdfd"
+                            android:orientation="horizontal"
+                            android:padding="3dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/comment" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/LinearLayout01"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/likelayout"
+                            android:background="#fdfdfd"
+                            android:orientation="horizontal"
+                            android:padding="3dp" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/share" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="100"
+                                android:textSize="12sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                 	<ListView
+                        android:id="@+id/listview_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:divider="#00000000"
+                        android:height="?android:attr/listPreferredItemHeight" >
+                    </ListView>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.example.alert.CircleImageView
+                android:id="@+id/avata_details"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/avata"
+                app:border_color="#ffffff"
+                app:border_width="2dp"/>
+
+  </RelativeLayout>
+  </ScrollView>
+		
+		</RelativeLayout>
+		   <TextView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:gravity="center|top"
+		        android:text="The Awesome Sliding Up Panel"
+		        android:textSize="16sp" />
+		   
+	</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+	 <include
+     android:layout_alignParentBottom="true"
+     android:layout_alignParentLeft="true"
+     layout="@layout/footer_detail"
+     android:id="@+id/footer_details"
+     android:background="#000000" />
+</RelativeLayout>

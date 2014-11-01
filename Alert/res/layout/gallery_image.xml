@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <Button
+        android:id="@+id/btok"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#0099FF"
+        android:text="Chọn Ảnh"
+        android:textColor="#fff" />
+
+    <GridView
+        android:id="@+id/gridGallery"
+        android:layout_width="fill_parent"
+        android:layout_height="347dp"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:layout_weight="0.97"
+        android:numColumns="3"
+        android:padding="2dp"
+        tools:listitem="@layout/item_gallery" >
+    </GridView>
+
+    <include
+        layout="@layout/footer"
+        android:background="#000000" />
+
+</LinearLayout>

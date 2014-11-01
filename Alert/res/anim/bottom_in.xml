@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+     android:interpolator="@android:anim/linear_interpolator">  
+  <rotate android:interpolator="@android:anim/decelerate_interpolator"
+    android:fromDegrees="-45"
+    android:toDegrees="-10"
+    android:pivotX="90%"
+    android:pivotY="10%"
+    
+    android:fillAfter="false"
+    android:duration="500" />
+</set> 

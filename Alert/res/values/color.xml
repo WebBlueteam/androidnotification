@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <color name="list_background">#26272e</color><!-- mau nen cua nguyen list -->
+      <color name="list_divider">#ffffff</color><!-- mau duong vien -->
+      <color name="item_color">#373945</color><!-- mau ne cua item -->
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiêu Đề:"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editText1"
+        style="@android:drawable/editbox_dropdown_dark_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nội Dung:"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/show_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.25"
+            android:background="#0033CC"
+            android:text="Thư Viện Ảnh"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/show_camera"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:background="#FF0033"
+            android:text="Camera"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/show_mylocation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#00AA00"
+        android:text="Đăng Bài"
+        android:textColor="#ffffff" />
+
+    <GridView
+        android:id="@+id/selectedgalery"
+        android:layout_width="fill_parent"
+        android:layout_height="282dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.72"
+        android:numColumns="3"
+        android:padding="2dp"
+        tools:listitem="@layout/item_gallery" >
+    </GridView>
+
+    <include
+        layout="@layout/footer"
+        android:background="#000000" />
+
+</LinearLayout>
